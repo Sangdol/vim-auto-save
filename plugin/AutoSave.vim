@@ -118,11 +118,7 @@ function s:GetVar(...)
 endfunction
 
 function DoSave()
-  if g:auto_save_write_all_buffers >= 1
-    silent! wa
-  else
-    silent! w
-  endif
+  update
 endfunction
 
 function AutoSaveToggle()
